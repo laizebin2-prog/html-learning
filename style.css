@@ -1,0 +1,56 @@
+body {
+  background-color: #f0f2f5;
+  font-family: 'Segoe UI',sans-serif;
+  display: flex;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  gap:50px;
+  padding: 30px;
+}
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  padding: 3cqb;
+  width: 300px;
+  text-align: center;
+}
+h1 {
+  color: #333;
+  text-align: center;
+} 
+button {
+  background-color: #007BFF;
+  color:white;
+ 
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  
+}
+
+/* 按钮的属性 */
+button:hover {
+  background-color: #0056b3;
+}
+
+#paral{
+  color: #598;
+  font-size: 18px;
+  text-align: left;
+}
+
+.paral{
+  width:200px;
+  height: 60px;
+  color:#0056b3;
+  text-align:center;
+  font-size: 18px;
+  background:url('dig.jpg') center/cover no-repeat;
+
+
+
+}

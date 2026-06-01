@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <title>css实例</title>
+    <style>
+      p{
+        color:#ff00ff;
+        font-size: 34px;
+        font-style: oblique;
+      }
+      .paral{
+        color:#ff00ff;
+        font-size: 18px;
+        text-align: left;
+      }
+      /* 鼠标未悬停 */
+      a:link{
+        color: #00ff00;
+      }
+      /* 已访问链接 */
+      a:visited{
+        color: #800080;
+      }
+      /* 鼠标悬停 */
+      a:hover{
+        color: #ff0000;
+      }
+      /* 激活链接 */
+      a:active{
+        color: #0000ff;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="card">
+      <h1 style="text-align: center;">css实例</h1>
+      <p>vs code 写的第一个样式卡片</p>
+      <button>点击我</button>
+    </div>
+
+
+    <div id="paral">
+      <p>用来编译的段落</p>
+      <p class="paral">数字平台</p>
+      <p class="paral">学生平台</p>
+      <p class="paral" style="color: #00ff00; font-size: 16px;">教师平台</p>
+      
+    </div>
+    <br>
+    <div class="link">
+      <a href="https://www.runoob.com/" target="_blank">菜鸟教程</a><br>
+      <a href="https://www.google.com/" target="_blank">谷歌</a><br>
+      <a href="https://www.bing.com/" target="_blank">必应</a><br>
+    </div>
+  </body>
+
+</html>

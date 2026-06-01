@@ -4,10 +4,37 @@
 <style type="text/css">
   body {
     background-color: lightgray;
+    padding: 20px;
   }
   p {
     color: blue;
     font-size: 18px;
+  }
+  table{
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+  }
+  
+  ul{
+    margin-left: 0px;
+    padding-left: 20px;
+  }
+  ol{
+    margin-left: 0px;
+    padding-left: 20px;
+  }
+  form {
+    margin-top: 20px;
+    line-height: 2;
+  }
+  form label {
+    display: inline-block;
+    width: 40px;
   }
 </style>
   
@@ -18,14 +45,16 @@
   <base href="http://www.runoob.com/" target="_blank">
 </head>
 <body>
-  <h1 style="text-align: center;">菜鸟教程</h1>
-  <!-- 这是一个注释，浏览器不会显示 -->
-  <h2 style="background-color: lightcoral; font-size: px;">欢迎来到菜鸟教程！</h2>
-  <h3>学习编程，从这里开始！</h3>
-  <h4>为什么选择菜鸟教程？</h4>
-  <h5>丰富的资源</h5>
-  <h6>易于理解的教程</h6>
 
+  <div style="color: red; font-size: 24px;">
+    <h1 style="text-align: center;">菜鸟教程</h1>
+    <!-- 这是一个注释，浏览器不会显示 -->
+    <h2 style="background-color: lightcoral; font-size: px;">欢迎来到菜鸟教程！</h2>
+    <h3>学习编程，从这里开始！</h3>
+    <h4>为什么选择菜鸟教程？</h4>
+    <h5>丰富的资源</h5>
+    <h6>易于理解的教程</h6>
+  </div>
   
   <p style="color: green;">菜鸟教程 (Rookie Tutorial) 是一个提供各种编程语言和技术教程的网站，旨在帮助初学者快
     速入门并掌握编程技能。<br>无论你是
@@ -58,6 +87,93 @@
   
   <p id="sec">菜鸟教程的第二个段落</p>
   <p class="sed">菜鸟教程的第二个段落</p>
+
+  <table border="1" >
+  <caption>用户信息表</caption>
+    <tr>
+      <th>姓名</th>
+      <th>年龄</th>
+      <th>职业</th>
+    </tr>
+    <tr>
+      <td>张三</td>
+      <td>28</td>
+      <td>程序员</td>
+    </tr>
+    <tr>
+      <td>李四</td>
+      <td>32</td>
+      <td>设计师</td>
+    </tr>
+    <tr>
+      <td>王五</td>
+      <td>25</td>
+      <td>产品经理</td>
+    </tr>
+  </table><br
+
+  <div>输入用户信息</div>
+  <form action="/submit" method="post">
+    <label for="name">姓名:</label>
+    <input type="text" id="name" name="name"><br>
+    <label for="email">邮箱:</label>
+    <input type="email" id="email" name="email"><br>
+
+    <label>性别:</label>
+    <input type="radio" id="male" name="gender" value="male">
+    <label for="male">男</label>
+    <input type="radio" id="female" name="gender" value="female">
+    <label for="female  ">女</label><br>
+
+    <label for="hobby" style="display: inline-block;text-align: right; width: 40px;">爱好:</label>
+        <input type="checkbox" id="hobby1" name="hobby" value="coding">
+        <label for="hobby1">编程</label>  
+        <input type="checkbox" id="hobby2" name="hobby" value="music">
+        <label for="hobby2">音乐</label>
+        <input type="checkbox" id="hobby3" name="hobby" value="sports">
+        <label for="hobby3">运动</label><br>
+
+    <label for="country">国家:</label>
+    <select id="country" name="country">
+      <option value="china">中国</option>
+      <option value="usa">美国</option>
+      <option value="uk">英国</option>
+    </select><br>
+  
+
+  <div style="text-align: center;">
+    <input type="submit" value="确认提交" style="text-align: center;">
+  </div><br>
+  </form>
+
+  <iframe src="#base" width="90%" height="260px" title="菜鸟教程" ></iframe>
+  <br>
+
+  <script>
+    function showMessage() {
+      alert("欢迎来到菜鸟教程！");
+    }
+
+  </script>
+
+  <button onclick="showMessage()">点击我</button>
+
+  <ul style="color: blueviolet;" list-style-type: square !important;>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
+  </ul>
+
+  <ol type="A">
+    <li><b>Python</b></li>
+      <ul style="color: red;" list-style-type: circle !important;>  
+        <li><i>Django</i></li>
+        <li><i>Flask</i></li>
+      </ul>
+    <li><em>Java</em></li>
+    <li><em>C++</em></li>
+  </ol>
+
 
   <p title="悬停显示">菜鸟教程的第二个段落</p>
   <input type="text" placeholder="请输入内容">
