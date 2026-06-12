@@ -1,7 +1,6 @@
 body {
   background-color: #f0f2f5;
   font-family: 'Segoe UI',sans-serif;
-  display: flex;
   align-items: center;
   height: 100vh;
   margin: 0;
@@ -22,7 +21,7 @@ h1 {
 } 
 button {
   background-color: #007BFF;
-  color:white;
+
  
   border: none;
   padding: 10px 20px;
@@ -50,7 +49,31 @@ button:hover {
   text-align:center;
   font-size: 18px;
   background:url('dig.jpg') center/cover no-repeat;
+}
 
+table,th,td {
+  width: 60%;
+  border: 1px solid #000;
+}
+td {
+  height: 30px;
+  text-align: center;
+  background-color: green;
+  color: white;
+}
 
+.ex{
+  min-width: 50px;
+  height:auto;
+  border: 2px inset green;
+  border-top-style: none;
+  border-left-style: inset;
+  border-right-style: dotted;
+  border-bottom-style: solid;
 
+}
+
+.hidden{
+  visibility: hidden; 
+  display: none;  
 }

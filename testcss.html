@@ -7,7 +7,7 @@
     <style>
       p{
         color:#ff00ff;
-        font-size: 34px;
+        font-size: 18px;
         font-style: oblique;
       }
       .paral{
@@ -37,14 +37,12 @@
     <div class="card">
       <h1 style="text-align: center;">css实例</h1>
       <p>vs code 写的第一个样式卡片</p>
-      <button>点击我</button>
+      <button onmouseout="this.innerHTML=Date()" onblur="">点击我</button>
     </div>
 
 
     <div id="paral">
       <p>用来编译的段落</p>
-      <p class="paral">数字平台</p>
-      <p class="paral">学生平台</p>
       <p class="paral" style="color: #00ff00; font-size: 16px;">教师平台</p>
       
     </div>
@@ -53,7 +51,35 @@
       <a href="https://www.runoob.com/" target="_blank">菜鸟教程</a><br>
       <a href="https://www.google.com/" target="_blank">谷歌</a><br>
       <a href="https://www.bing.com/" target="_blank">必应</a><br>
+      <p id="demo1"></p>
+      <p id="demo2"></p>
+      <p>设置y=5，x=10,计算 x+y的值</p>
+      <button onclick="calculation(7,2)" >计算</button>
+
+      <p id="cal"></p>
     </div>
+
+    <script>
+      function calculation(y,x){
+        if  (y > x) {
+          document.getElementById("cal").innerHTML = '答案：' + String(x+y)
+        }
+        if (y = x) {
+          document.getElementById("cal").innerHTML = '答案：' + String(x/y)
+          
+        } else {
+          document.getElementById("cal").innerHTML = '答案：' + String(x-y)
+
+        }
+      }
+      const name="ro\"o\bot"
+      let letter=name.length
+      document.getElementById("demo1").innerHTML = myFunction(5,10);
+      document.getElementById("demo2").innerHTML = "输出字符串长度：" + letter;
+
+    </script>
+
+
   </body>
 
 </html>
